@@ -5,3 +5,5 @@
 [1. Pong](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/Pong)
 
 [2. Disco de mesa](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/Disco-de-mesa)
+
+[3. Arkanoid](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/Arkanoid)
