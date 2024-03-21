@@ -1,16 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Blocos : MonoBehaviour
 {
     
     public int vida = 2;
 
-    void Start()
-    {
-        
-    }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
@@ -74,4 +71,42 @@ public class Blocos : MonoBehaviour
         // Retorna a cor
         return new Color(r, g, b);
     }
+
+
+
+    public static int totalBlocks = 0;
+
+    void Start()
+    {
+        totalBlocks++;
+    }
+
+    void OnDestroy()
+    {
+        totalBlocks--;
+
+        if (totalBlocks <= 0)
+        {
+            LoadNextScene();
+        }
+    }
+
+    void LoadNextScene()
+    {
+        // Você precisa definir as próximas cenas no Editor do Unity
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        // Verifica se a próxima cena existe
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.Log("Não há mais cenas disponíveis!");
+        }
+    }
+
+
 }
