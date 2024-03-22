@@ -7,3 +7,5 @@
 [2. Disco de mesa](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/Disco-de-mesa)
 
 [3. Arkanoid](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/Arkanoid)
+
+[4. Space Invaders](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/space_invaders)
