@@ -8,4 +8,4 @@
 
 [3. Arkanoid](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/Arkanoid)
 
-[4. Space Invaders](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/space_invaders)
+[4. Space Invaders](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/Space-Invaders)
