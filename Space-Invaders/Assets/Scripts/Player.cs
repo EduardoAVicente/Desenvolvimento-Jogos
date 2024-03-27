@@ -1,72 +1,47 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class Player : MonoBehaviour
 {
+    public float speed = 5f;
     public Projectile laserPrefab;
-    public float speed = 5.0f;
 
-    private bool laserActive;
+    private Projectile laser;
 
     private void Update()
     {
-        // Movimento do jogador com o mouse
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = 0f;
-        transform.position = Vector3.MoveTowards(transform.position, mousePosition, speed * Time.deltaTime);
+        Vector3 position = transform.position;
 
-        // Atirar com o clique do mouse
-        if (Input.GetMouseButtonDown(0))
-        {
-            Shoot();
+        // Update the position of the player based on the input
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
+            position.x -= speed * Time.deltaTime;
+        }
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
+            position.x += speed * Time.deltaTime;
+        }
+
+        // Clamp the position of the character so they do not go out of bounds
+        Vector3 leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero);
+        Vector3 rightEdge = Camera.main.ViewportToWorldPoint(Vector3.right);
+        position.x = Mathf.Clamp(position.x, leftEdge.x, rightEdge.x);
+
+        // Set the new position
+        transform.position = position;
+
+        // Only one laser can be active at a given time so first check that
+        // there is not already an active laser
+        if (laser == null && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))) {
+            laser = Instantiate(laserPrefab, transform.position, Quaternion.identity);
         }
     }
 
-    private void Shoot()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!laserActive)
-        {
-            Projectile projectile = Instantiate(laserPrefab, transform.position, Quaternion.identity);
-            projectile.destroyed += LaserDestroyed;
-            laserActive = true;
+        if (other.gameObject.layer == LayerMask.NameToLayer("Missile") ||
+            other.gameObject.layer == LayerMask.NameToLayer("Invader")) {
+            GameManager.Instance.OnPlayerKilled(this);
         }
     }
 
-    private void LaserDestroyed()
-    {
-        laserActive = false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Invader") ||
-            collision.gameObject.layer == LayerMask.NameToLayer("Missile"))
-        {
-            // Condição de derrota
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        // Limites da tela em coordenadas do mundo
-        Vector2 screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-
-        // Tamanho do sprite do jogador
-        Bounds playerBounds = GetComponent<SpriteRenderer>().bounds;
-
-        // Calcula os offsets do sprite do jogador (metade do tamanho do sprite)
-        float xOffset = playerBounds.size.x / 2;
-        float yOffset = playerBounds.size.y / 2;
-
-        // Posição atual do jogador
-        Vector3 playerPosition = transform.position;
-
-        // Limita a posição do jogador aos limites da tela, considerando os offsets do sprite
-        playerPosition.x = Mathf.Clamp(playerPosition.x, -screenBounds.x + xOffset, screenBounds.x - xOffset);
-        playerPosition.y = Mathf.Clamp(playerPosition.y, -screenBounds.y + yOffset, screenBounds.y - yOffset);
-
-        // Atualiza a posição do jogador
-        transform.position = playerPosition;
-    }
 }

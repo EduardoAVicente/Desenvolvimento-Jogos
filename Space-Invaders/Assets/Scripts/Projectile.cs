@@ -1,24 +1,41 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class Projectile : MonoBehaviour
 {
-    public Vector3 direction;
-    public float speed;
-    public System.Action destroyed;
+    public Vector3 direction = Vector3.up;
+    public float speed = 20f;
+
+    private new BoxCollider2D collider;
+
+    private void Awake()
+    {
+        collider = GetComponent<BoxCollider2D>();
+    }
 
     private void Update()
     {
-        this.transform.position += this.direction * this.speed * Time.deltaTime;
+        transform.position += speed * Time.deltaTime * direction;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (this.destroyed != null)
-        {
-            this.destroyed.Invoke();
+        CheckCollision(other);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        CheckCollision(other);
+    }
+
+    private void CheckCollision(Collider2D other)
+    {
+        Bunker bunker = other.gameObject.GetComponent<Bunker>();
+
+        if (bunker == null || bunker.CheckCollision(collider, transform.position)) {
+            Destroy(gameObject);
         }
-       
-        Destroy(this.gameObject);
     }
 
 }
