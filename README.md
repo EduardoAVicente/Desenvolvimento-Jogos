@@ -12,4 +12,4 @@
 
 [5. SpaceShip](https://github.com/EduardoAVicente/Desenvolvimento-Jogos/tree/main/SpaceShip)
 
-[7. Plataforma]()
+[6. Plataforma]()
