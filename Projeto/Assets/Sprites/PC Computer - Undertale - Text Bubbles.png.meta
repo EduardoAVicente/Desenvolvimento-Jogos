@@ -1,0 +1,471 @@
+fileFormatVersion: 2
+guid: 0165fec213352144c9244954f1ea6cca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 762
+        width: 99
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dc45760261554418b358184d3f1f9b
+      internalID: 205061095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 762
+        width: 99
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f8a9da787e75648a31cee3433409bc
+      internalID: 828710094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 666
+        width: 99
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9480bf49d792b9a4ca6d26866fb6079c
+      internalID: 1290752194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 666
+        width: 99
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ea9709fbd5c7b46900c3198ce278f9
+      internalID: -1784062019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_25
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 604
+        width: 70
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c32c26869b1e4048b8586fff4d1aa2e
+      internalID: -1675124389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_26
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 603
+        width: 87
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23586b205cd372b4084ec7690d9fe77c
+      internalID: 337513591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_27
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 583
+        width: 289
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05163dd9f517419469e8646cc0df647d
+      internalID: -2128064099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_28
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 468
+        width: 174
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98786ec57f5350a4ab03d201427e78cc
+      internalID: 198838148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_29
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 468
+        width: 174
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecf6053cc3549541a07503686a01e94
+      internalID: 1243773300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_30
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 334
+        width: 237
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ad70c6955ea56428f68d6fa4d9c8a9
+      internalID: 566335897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_31
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 334
+        width: 237
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9ea8fabb9eea94da360acdf1d279b3
+      internalID: 1506327293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_32
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 88
+        width: 105
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bff64b051e392418257f927f941a16
+      internalID: 1672165842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Undertale - Text Bubbles_33
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 88
+        width: 210
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f4397394ba55048b61294421c0c9f1
+      internalID: 1030302197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Undertale - Text Bubbles_0: 205061095
+      PC Computer - Undertale - Text Bubbles_1: 828710094
+      PC Computer - Undertale - Text Bubbles_10: 1839777715
+      PC Computer - Undertale - Text Bubbles_11: -2066887078
+      PC Computer - Undertale - Text Bubbles_12: -1024346985
+      PC Computer - Undertale - Text Bubbles_13: 747903726
+      PC Computer - Undertale - Text Bubbles_14: 1681183243
+      PC Computer - Undertale - Text Bubbles_15: -1386947663
+      PC Computer - Undertale - Text Bubbles_16: 649483364
+      PC Computer - Undertale - Text Bubbles_17: -454332706
+      PC Computer - Undertale - Text Bubbles_18: -324101166
+      PC Computer - Undertale - Text Bubbles_19: -791262569
+      PC Computer - Undertale - Text Bubbles_2: 1290752194
+      PC Computer - Undertale - Text Bubbles_20: -179748935
+      PC Computer - Undertale - Text Bubbles_21: 1213295958
+      PC Computer - Undertale - Text Bubbles_22: -353036306
+      PC Computer - Undertale - Text Bubbles_23: 1354109097
+      PC Computer - Undertale - Text Bubbles_24: -1360224054
+      PC Computer - Undertale - Text Bubbles_25: -1675124389
+      PC Computer - Undertale - Text Bubbles_26: 337513591
+      PC Computer - Undertale - Text Bubbles_27: -2128064099
+      PC Computer - Undertale - Text Bubbles_28: 198838148
+      PC Computer - Undertale - Text Bubbles_29: 1243773300
+      PC Computer - Undertale - Text Bubbles_3: -1784062019
+      PC Computer - Undertale - Text Bubbles_30: 566335897
+      PC Computer - Undertale - Text Bubbles_31: 1506327293
+      PC Computer - Undertale - Text Bubbles_32: 1672165842
+      PC Computer - Undertale - Text Bubbles_33: 1030302197
+      PC Computer - Undertale - Text Bubbles_34: -740319948
+      PC Computer - Undertale - Text Bubbles_35: -999759375
+      PC Computer - Undertale - Text Bubbles_36: 1507175188
+      PC Computer - Undertale - Text Bubbles_37: -211783830
+      PC Computer - Undertale - Text Bubbles_38: -677871726
+      PC Computer - Undertale - Text Bubbles_39: -1775480340
+      PC Computer - Undertale - Text Bubbles_4: 1892404656
+      PC Computer - Undertale - Text Bubbles_40: 1883461689
+      PC Computer - Undertale - Text Bubbles_41: -1889034948
+      PC Computer - Undertale - Text Bubbles_42: 285284407
+      PC Computer - Undertale - Text Bubbles_43: 367969071
+      PC Computer - Undertale - Text Bubbles_44: -741429202
+      PC Computer - Undertale - Text Bubbles_45: 1971709107
+      PC Computer - Undertale - Text Bubbles_46: 1326932815
+      PC Computer - Undertale - Text Bubbles_47: -1883484897
+      PC Computer - Undertale - Text Bubbles_48: -1509023670
+      PC Computer - Undertale - Text Bubbles_49: 1353660547
+      PC Computer - Undertale - Text Bubbles_5: -1325299124
+      PC Computer - Undertale - Text Bubbles_50: -683690818
+      PC Computer - Undertale - Text Bubbles_51: 2059973989
+      PC Computer - Undertale - Text Bubbles_52: 599897520
+      PC Computer - Undertale - Text Bubbles_53: 2129094875
+      PC Computer - Undertale - Text Bubbles_54: -139953827
+      PC Computer - Undertale - Text Bubbles_55: -660630728
+      PC Computer - Undertale - Text Bubbles_56: 1907681704
+      PC Computer - Undertale - Text Bubbles_57: 488929934
+      PC Computer - Undertale - Text Bubbles_58: 968069600
+      PC Computer - Undertale - Text Bubbles_59: 1209721117
+      PC Computer - Undertale - Text Bubbles_6: -2055955054
+      PC Computer - Undertale - Text Bubbles_60: -2111687189
+      PC Computer - Undertale - Text Bubbles_61: -795418402
+      PC Computer - Undertale - Text Bubbles_62: -2021053643
+      PC Computer - Undertale - Text Bubbles_63: -1312663379
+      PC Computer - Undertale - Text Bubbles_64: -2050788061
+      PC Computer - Undertale - Text Bubbles_65: -2041211233
+      PC Computer - Undertale - Text Bubbles_66: -491524771
+      PC Computer - Undertale - Text Bubbles_67: -1416959762
+      PC Computer - Undertale - Text Bubbles_68: -466710565
+      PC Computer - Undertale - Text Bubbles_69: 1282743161
+      PC Computer - Undertale - Text Bubbles_7: -635180087
+      PC Computer - Undertale - Text Bubbles_70: -440147487
+      PC Computer - Undertale - Text Bubbles_8: -1885977520
+      PC Computer - Undertale - Text Bubbles_9: 1179136640
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
